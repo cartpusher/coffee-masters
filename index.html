@@ -13,5 +13,71 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img src="./coffee_masters_logo.png" alt="coffee masters logo" />
+      <h1 class="logo">Coffee Masters</h1>
+    </header>
+    <main>
+      <div class="items">
+        <h3 class="title">Items</h3>
+        <div class="item">
+          <p class="quantity">1x</p>
+          <div class="item__details">
+            <p class="item__details-name">Cappucino</p>
+            <p class="item__details-custom">Light Foam</p>
+          </div>
+          <p class="item__price">$6.00</p>
+        </div>
+        <div class="item">
+          <p class="quantity">1x</p>
+          <div class="item__details">
+            <p class="item__details-name">Cappucino</p>
+            <p class="item__details-custom">Almond Milk</p>
+            <p class="item__details-custom">Double Espresso Shot</p>
+          </div>
+          <p class="item__price">$7.90</p>
+        </div>
+        <div class="item">
+          <p class="quantity">1x</p>
+          <div class="item__details">
+            <p class="item__details-name">Croissant</p>
+            <p class="item__details-custom">Butter</p>
+          </div>
+          <p class="item__price">$5.37</p>
+        </div>
+      </div>
+      <div class="payment">
+        <form>
+          <div class="payment__name">
+            <h3 class="title">Name</h3>
+            <label for="name" class="payment__label">Name for order</label>
+            <input type="text" id="name" class="payment__input" />
+          </div>
+          <div class="paymen__details">
+            <h3 class="title">Payment</h3>
+            <label for="card-number" class="payment__label">Card number</label>
+            <input type="text" class="payment__input" id="card-number" />
+            <label for="ccv-number" class="payment__label">CCV number</label>
+            <input type="text" class="payment__input" id="ccv-number" />
+          </div>
+        </form>
+      </div>
+      <div class="cost">
+        <div class="cost__subtotal">
+          <p>Subtotal:</p>
+          <p>$19.27</p>
+        </div>
+        <div class="cost__tax">
+          <p>Tax:</p>
+          <p>$0.96</p>
+        </div>
+        <div class="cost__total">
+          <p>Total:</p>
+          <p>$20.23</p>
+        </div>
+      </div>
+      <button class="btn-order">Place order</button>
+    </main>
+  </body>
 </html>
