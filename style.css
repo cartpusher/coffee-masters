@@ -5,4 +5,147 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #efefef;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fbf2c0;
+}
+
+.title,
+.payment__label {
+  color: #885a2d;
+}
+
+.title {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.item__details-name,
+.item__price,
+.cost__total p {
+  font-weight: 600;
+}
+
+.item__details-custom {
+  font-size: 0.875rem;
+  color: #b08968;
+}
+
+main {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+/* Header */
+
+header {
+  background-color: #43281c;
+  display: flex;
+  padding: 1.3rem 0;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo-img {
+  max-width: 25px;
+}
+
+/* Items */
+.items,
+.payment__name,
+.payment__details {
+  background-color: #eee1d5;
+  padding: 1.2rem 0.8rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 7px;
+}
+
+.item {
+  display: flex;
+  gap: 5rem;
+}
+
+.item + .item {
+  border-top: 2px solid #ddb892;
+  padding-top: 1rem;
+}
+
+.item__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item__price {
+  margin-left: auto;
+}
+
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.payment__name,
+.payment__details {
+  border-radius: 7px;
+}
+
+input {
+  padding: 8px;
+  width: 100%;
+  border-radius: 100px;
+  border: 2px #885a2d solid;
+  background-color: transparent;
+  text-indent: 18px;
+  font-size: 18px;
+}
+
+label {
+  position: relative;
+  background-color: #eee1d5;
+  font-size: 11px;
+  top: 9px;
+  padding: 0 2px;
+  left: 20px;
+}
+
+.cost {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 5rem 0;
+}
+
+.cost div {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.btn-order {
+  grid-column: span 2;
+  background-color: #deb993;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 100px;
+  font-size: 16px;
+  cursor: pointer;
 }

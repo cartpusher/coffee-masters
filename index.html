@@ -15,7 +15,11 @@
   </head>
   <body>
     <header>
-      <img src="./coffee_masters_logo.png" alt="coffee masters logo" />
+      <img
+        class="logo-img"
+        src="./coffee_masters_logo.png"
+        alt="coffee masters logo"
+      />
       <h1 class="logo">Coffee Masters</h1>
     </header>
     <main>
@@ -54,7 +58,7 @@
             <label for="name" class="payment__label">Name for order</label>
             <input type="text" id="name" class="payment__input" />
           </div>
-          <div class="paymen__details">
+          <div class="payment__details">
             <h3 class="title">Payment</h3>
             <label for="card-number" class="payment__label">Card number</label>
             <input type="text" class="payment__input" id="card-number" />
@@ -66,15 +70,15 @@
       <div class="cost">
         <div class="cost__subtotal">
           <p>Subtotal:</p>
-          <p>$19.27</p>
+          <p class="price">$19.27</p>
         </div>
         <div class="cost__tax">
           <p>Tax:</p>
-          <p>$0.96</p>
+          <p class="price">$0.96</p>
         </div>
         <div class="cost__total">
           <p>Total:</p>
-          <p>$20.23</p>
+          <p class="price">$20.23</p>
         </div>
       </div>
       <button class="btn-order">Place order</button>
